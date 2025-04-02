@@ -1,4 +1,6 @@
-# Command to delete an Amazon EKS cluster using eksctl
+#!/bin/bash
+
 eksctl delete cluster \
-    --name K8S-Blue-Green \
-    --region us-east-1
+  --name K8S-Blue-Green \
+  --region us-east-1 \
+  --disable-nodegroup-eviction
